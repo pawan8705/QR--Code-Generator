@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do list</title>
+    <!-- <link rel="stylesheet" href="/bootstrap.css"> -->
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="box">
+        <div class="qr-header">
+            <h1 id="heading">Generate QR Code</h1>
+            <input type="text" id="Qr-text" placeholder="Type Your Text or URL . . .">
+
+
+            <div class="">
+                <label for="sizes">Select Sizes:</label>
+                <select id="sizes">
+                    <option value="100">100*100</option>
+                    <option value="200">200*200</option>
+                    <option value="300">300*300</option>
+                    <option value="400">400*400</option>
+                    <option value="500">500*500</option>
+                    <option value="600">600*600</option>
+                    <option value="700">700*700</option>
+                    <option value="800">800*800</option>
+                    <option value="900">900*900</option>
+                    <option value="1000">1000*1000</option>
+                </select>
+            </div>
+        </div>
+        <div class="qr-body" id="qr-body"></div>
+        <div class="qr-footer">
+            <a href="" id="generatebtn">Generate</a>
+            <a href="" id="downloadbtn" download="QR_Code.png">Download</a>
+        </div>
+    </div>
+    <script src="Script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</body>
+
+</html>

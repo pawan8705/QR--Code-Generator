@@ -1,0 +1,138 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: math;
+  background-color: #3b1c32;
+  overflow: hidden;
+}
+
+.box {
+  padding: 30px;
+  width: 400px;
+  border-radius: 10px;
+  background-color: #1a1a1d;
+  box-shadow: 0px 0px 15px 5px #ffcfe7;
+}
+
+#Qr-text::placeholder,
+#heading {
+  color: #ffcfe7;
+  font-weight: 700;
+}
+
+#heading {
+  text-decoration: underline;
+  margin: 10px 0px;
+  text-shadow: 3px 3px 3px #A64D79;
+}
+
+#Qr-text::placeholder {
+  padding: 10px 0px;
+}
+
+.qr-header {
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+}
+
+.qr-header input {
+  width: 100%;
+  margin-block: 12px;
+  background-color: #1a1a1d;
+  color: #ffcfe7;
+  font-weight: 700;
+
+}
+
+.qr-header input,
+select {
+  padding: 8px;
+  border-radius: 10px;
+  font-size: 1rem;
+  outline: none;
+  border: 4px solid #A64D79;
+  box-shadow: 0px 0px 3px 1px #ffcfe7;
+}
+
+.qr-header label {
+  color: #ffcfe7;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 10px 0px;
+
+}
+
+.qr-header div {
+  display: flex;
+  justify-content: space-between;
+}
+
+#sizes {
+  background-color: #1a1a1d;
+  color: #ffcfe7;
+}
+
+.qr-footer {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.qr-footer a {
+  background-color: #1a1a1d;
+  text-decoration: none;
+  font-size: 1.5rem;
+  padding: 14px 36px;
+  margin-inline: 5px;
+  color: #ffcfe7;
+  border-radius: 10px;
+  font-weight: 700;
+  border: 4px solid #A64D79;
+  box-shadow: 0px 0px 3px 1px #ffcfe7;
+  transition: 0.5s ease-out;
+}
+
+.qr-footer a:hover {
+  border: 4px solid #3b1c32;
+  color: #3b1c32;
+  background-color: #ffcfe7;
+
+}
+
+#qr-body {
+  display: grid;
+  place-items: center;
+  padding: 20px;
+}
+
+#qr-body img {
+  max-width: 100%;
+  max-height: 100%;
+  margin-block: 10px;
+  padding: 10px;
+  border: 1px solid #ffcfe7;
+  border-radius: 10px;
+}
+
+@media screen and (max-width:395px) {
+  .qr-footer a {
+    font-size: 1.2rem;
+    padding: 14px 20px;
+    margin-inline: 7px;
+  }
+
+  .qr-header label {
+    font-size: 1.2rem;
+  }
+}
